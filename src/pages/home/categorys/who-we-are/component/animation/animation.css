@@ -1,0 +1,55 @@
+#quem-somos-vetor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+/* Grupo 1106' */
+/* compass-arrow */
+[data-name='Grupo 1106'] {
+  transform: translate(-692.069px, -721px) rotate(80deg);
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: 1s;
+}
+#quem-somos-vetor:hover [data-name='Grupo 1106'] {
+  transform: translate(-692.069px, -721px) rotate(-30deg);
+  transition: 1s;
+}
+
+/* Caminho 289 */
+/* gear-1 */
+
+[data-name='Caminho 289'] {
+  transform: translate(-87.611px, -77.873px);
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: 2s;
+}
+#quem-somos-vetor:hover [data-name='Caminho 289'] {
+  transition: 2s;
+  transform: translate(-87.611px, -77.873px) rotate(-90deg);
+}
+
+/* Caminho_228*/
+/* gear-2 */
+[data-name='Caminho 228'] {
+  transform: translate(-249.206px, -59.127px);
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: 2s;
+}
+#quem-somos-vetor:hover [data-name='Caminho 228'] {
+  transition: 2s;
+  transform: translate(-249.206px, -59.127px) rotate(90deg);
+}
+
+/* Caminho_455 */
+/* lamp */
+[data-name='Caminho 455'] {
+  transition: 2s;
+}
+#quem-somos-vetor:hover [data-name='Caminho 455'] {
+  fill: yellow;
+}

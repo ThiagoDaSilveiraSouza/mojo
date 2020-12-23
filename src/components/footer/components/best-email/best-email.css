@@ -1,0 +1,68 @@
+#best-email {
+  width: 100%;
+  padding: 60px 0;
+}
+#best-email .centralizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#best-email h3,
+#best-email h5 {
+  font-weight: 400;
+  margin: 0;
+}
+#best-email h3 {
+  font-size: 25px;
+}
+#best-email h5 {
+  font-size: 18px;
+}
+/* .enter-best-email  */
+.enter-best-email {
+  font-size: 15px;
+  padding: 10px;
+  background: white;
+  display: flex;
+  width: 90vw;
+  max-width: 440px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.enter-best-email input,
+.enter-best-email button {
+  border: none;
+  outline: none;
+  background: white;
+  font-family: var(--main-font);
+  font-size: 15px;
+  color: #828482;
+}
+.enter-best-email input:focus ~ button,
+.enter-best-email input:focus ~ button span {
+  /* color: black; */
+  /* border-color: black; */
+}
+.enter-best-email input {
+  font-weight: 500;
+  width: 100%;
+}
+.enter-best-email button {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.enter-best-email button span {
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #8b758b;
+  border-right: 2px solid #8b758b;
+  transform: rotate(45deg);
+}

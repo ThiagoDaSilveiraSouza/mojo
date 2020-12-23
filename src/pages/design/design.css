@@ -1,0 +1,7 @@
+.design {
+  padding-bottom: 40px;
+}
+.design .page-title,
+.design .page-sub-title-1 {
+  color: var(--design-color);
+}

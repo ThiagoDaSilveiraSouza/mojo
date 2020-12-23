@@ -1,0 +1,206 @@
+header {
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  align-items: space-between;
+  flex-wrap: wrap;
+  z-index: 5;
+  background: var(--main-dark-bg);
+  position: fixed;
+  height: fit-content;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+header > .centralizer .logo {
+  padding: 20px 0;
+}
+header > .centralizer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu-hamburger {
+  display: none;
+  cursor: pointer;
+}
+header .centralizer nav .social-media {
+  display: none;
+}
+@media (max-width: 1000px) {
+  header .menu-hamburger {
+    display: flex;
+  }
+  header .social-media {
+    display: none;
+  }
+}
+/* nav */
+
+.header-menu {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 1.6rem;
+}
+.header-menu li {
+  position: relative;
+  display: flex;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.header-menu li a {
+  padding: 20px;
+  width: 100%;
+  transition: 0.3s;
+  color: white;
+  overflow: hidden;
+}
+/* font-theme */
+.font-theme-home a:hover {
+  transform: scale(1.1);
+  color: var(--green-color);
+}
+.active-menu .font-theme-home {
+  color: var(--green-color) !important;
+}
+.font-theme-branding a:hover {
+  transform: scale(1.1);
+  color: var(--branding-color);
+}
+.active-menu .font-theme-branding {
+  color: var(--branding-color) !important;
+}
+.font-theme-e-commerce a:hover {
+  transform: scale(1.1);
+  color: var(--e-commerce-color);
+}
+.active-menu .font-theme-e-commerce {
+  color: var(--e-commerce-color) !important;
+}
+.font-theme-marketing a:hover {
+  transform: scale(1.1);
+  color: var(--marketing-color);
+}
+.active-menu .font-theme-marketing {
+  color: var(--marketing-color) !important;
+}
+.font-theme-social-media a:hover {
+  transform: scale(1.1);
+  color: var(--social-media-color);
+}
+.active-menu .font-theme-social-media {
+  color: var(--social-media-color) !important;
+}
+.font-theme-sites a:hover {
+  transform: scale(1.1);
+  color: var(--sites-color);
+}
+.active-menu .font-theme-sites {
+  color: var(--sites-color) !important;
+}
+.font-theme-design a:hover {
+  transform: scale(1.1);
+  color: var(--design-color);
+}
+.active-menu .font-theme-design {
+  color: var(--design-color) !important;
+}
+.font-theme-editoracao a:hover {
+  transform: scale(1.1);
+  color: var(--editoracao-color);
+}
+.active-menu .font-theme-editoracao {
+  color: var(--editoracao-color) !important;
+}
+.font-theme-foto a:hover {
+  transform: scale(1.1);
+  color: var(--foto-color);
+}
+.active-menu .font-theme-foto {
+  color: var(--foto-color) !important;
+}
+
+.header-sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-100%);
+  transition: opacity 0.6s, transform 0.3s;
+  z-index: -5;
+  opacity: 0;
+}
+.header-menu li:hover .header-sub-menu {
+  transform: translateY(0);
+  z-index: 4;
+  opacity: 1;
+  transition: opacity 0.6s, transform 0.3s;
+}
+
+@media (max-width: 1000px) {
+  header .centralizer nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background: var(--main-dark-bg);
+    align-items: center;
+    transition: transform opacity 0.5s;
+  }
+  header .centralizer nav .social-media {
+    display: flex;
+  }
+  .header-menu {
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header-menu li a {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .show-menu {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: auto;
+    transition: 0.5s;
+  }
+  .hide-menu {
+    transform: translateY(-150%);
+    opacity: 0;
+    z-index: -5px;
+    transition: 0.5s;
+  }
+}
+
+/* invisible-header */
+.invisible-header {
+  height: 96px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.hide-header {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.show-header {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}

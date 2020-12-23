@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* COLORS */
+  --green-color: #bbcc35;
+  --main-dark-bg: rgba(0, 0, 0, 69%);
+  --dark-font-color: #474747;
+  --dark-font-color-2: #707070;
+
+  /* CATEGORYS COLORS */
+  --home-color: #bbcc35;
+  --branding-color: #ff4a5b;
+  --e-commerce-color: #67b3cb;
+  --marketing-color: #9b3cf7;
+  --social-media-color: #f5681c;
+  --sites-color: #e55c51;
+  --design-color: #43b8c8;
+  /* --unnamed-color: #797979; */
+  --editoracao-color: #0072d6;
+  --foto-color: #f63d3d;
+
+  /* FONTS */
+  --main-font: 'Poppins', sans-serif;
+}
+
+html {
+  font-family: var(--main-font);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+@media(max-width:360px){
+  html{
+    font-size: 58%;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  padding: unset;
+}
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+/* CENTRALIZER */
+.centralizer {
+  width: 90vw;
+  max-width: 1140px;
+  margin: 20px auto;
+}
+
+/* BANNER */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.banner picture {
+  display: flex;
+}
+.banner img {
+  margin: auto;
+  width: 100%;
+  min-width: 600px;
+}
+.banner h1 {
+  position: absolute;
+  font-size: calc(1em + 3vw);
+  /* font-size: 48px; */
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  max-width: 2000px;
+}
+.category-title {
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* .page-title */
+.page-title,
+.page-sub-title-1,
+.page-sub-title-2,
+.page-text {
+  font-family: var(--main-font);
+  font-weight: 700;
+}
+.page-title {
+  font-size: 30px;
+}
+.page-sub-title-1 {
+  font-size: 20px;
+}
+.page-sub-title-2 {
+  font-size: 18px;
+}
+.page-text {
+  font-weight: 400;
+  font-size: 15px;
+}
+.page-button {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  background: var(--green-color);
+  width: fit-content;
+  transition: 0.3s;
+}
+.page-button:hover {
+  box-shadow: 0px 1px 5px 0px black;
+}
+.page-button a {
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: white;
+}

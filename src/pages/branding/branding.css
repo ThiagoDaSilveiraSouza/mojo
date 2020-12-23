@@ -1,0 +1,7 @@
+.branding .page-title,
+.branding .page-sub-title-1 {
+  color: var(--branding-color);
+}
+.branding .page-button {
+  background: var(--branding-color);
+}

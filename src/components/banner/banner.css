@@ -1,0 +1,31 @@
+/* BANNER */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.banner picture {
+  display: flex;
+}
+.banner img {
+  margin: auto;
+  width: 100%;
+  min-width: 600px;
+}
+.banner h1 {
+  position: absolute;
+  font-size: 5rem;
+  /* font-size: 48px; */
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  max-width: 2000px;
+}
+.category-title {
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
