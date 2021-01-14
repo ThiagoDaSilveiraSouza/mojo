@@ -99,8 +99,8 @@ export const Header = () => {
       </header>
       <div
         className='invisible-header'
-        onMouseEnter={() => {
-          setHeaderVisibility(true)
+        onMouseOver={() => {
+          !headerVisibility && setHeaderVisibility(true)
         }}
       />
     </>
