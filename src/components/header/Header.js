@@ -20,7 +20,7 @@ export const Header = () => {
   const [navMenuVisibility, setNavMenuVisibility] = useState(false)
   const [lastDistanceToTop, setLastDistanceToTop] = useState(window.pageYOffset)
 
-  const scrollEvent = () => {
+  const scrollEvent = useCallback(() => {
     const setNewDistance = setTimeout(() => {
       clearTimeout(setNewDistance)
       const distanceToTop = window.pageYOffset
@@ -32,14 +32,14 @@ export const Header = () => {
 
       setLastDistanceToTop(distanceToTop)
     }, 500)
-  }
+  }, [headerVisibility, lastDistanceToTop])
 
   useEffect(() => {
     window.addEventListener("scroll", scrollEvent)
     return () => {
       window.removeEventListener("scroll", scrollEvent)
     }
-  })
+  }, [scrollEvent])
 
   const showNavMenu = useCallback(
     () => setNavMenuVisibility(!navMenuVisibility),

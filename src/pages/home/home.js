@@ -23,7 +23,6 @@ export const Home = ({ headerColor }) => {
     desktopImgPath: "./assets/banners/banner-home.jpg",
     mobileImgPath: "./assets/banners/banner-home-mobile.jpg",
   }
-
   return (
     <section className='home'>
       <Banner element={bannerElement} data-id='1' />

@@ -1,24 +1,24 @@
-import React from 'react'
-import './banner.css'
+import React from "react"
+import "./banner.css"
 
 export const Banner = ({ element }) => {
   const bannerElement = {
-    title: 'Titulo',
-    span: 'a',
-    title2: '',
-    desktopImgPath: './assets/banners/banner-design.jpg',
-    mobileImgPath: './assets/banners/banner-design-mobile.jpg',
+    title: "Titulo",
+    span: "a",
+    title2: "",
+    desktopImgPath: "./assets/banners/banner-design.jpg",
+    mobileImgPath: "./assets/banners/banner-design-mobile.jpg",
   }
 
   return (
-    <div className="banner">
+    <div className='banner'>
       <picture>
         <source
-          media="(min-width: 601px)"
+          media='(min-width: 601px)'
           srcSet={element.desktopImgPath || bannerElement.desktopImgPath}
         />
         <source
-          media="(max-width: 601px)"
+          media='(max-width: 601px)'
           srcSet={element.mobileImgPath || bannerElement.mobileImgPath}
         />
         <img
