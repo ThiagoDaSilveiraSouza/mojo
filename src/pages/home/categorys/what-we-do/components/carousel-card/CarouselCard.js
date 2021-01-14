@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { ImWhatsapp } from "react-icons/im"
 
@@ -81,11 +80,15 @@ const DownSide = styled.div`
   }
 `
 export const CarouselCard = ({ categoryCard }) => {
-  const { name, description, color, imgPath, link } = categoryCard
+  const { name, description, color, imgPath } = categoryCard
   const whatsappMessage = `Ola! Acabei visitar o site da mojo e estou interessado em ${name.toUpperCase()}, gostaria de mais informações? `
   return (
     <StyledCarouselCard>
-      <a href={WhatsAppLink(whatsappMessage)} target='_blank'>
+      <a
+        href={WhatsAppLink(whatsappMessage)}
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         <TopSide color={color}>
           <div></div>
           <img src={`./assets/services-icons/${imgPath}`} alt={name} />

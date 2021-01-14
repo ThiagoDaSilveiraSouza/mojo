@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 
 // componets
-import { BestEmail } from './components/best-email'
+// import { BestEmail } from './components/best-email'
 import { TalkToUs } from './components/talk-to-us'
 
 export const Footer = () => {

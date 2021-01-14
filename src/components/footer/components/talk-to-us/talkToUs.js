@@ -1,14 +1,12 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
-// styled
-import { InputSubmit } from "./talk-to-us-styled"
 
 // components
 import { SocialMedia } from "../../../social-media"
 import { MailchimpForm } from "./mailchimp-form"
 
 // services
-import { companyData, WhatsAppLink } from "../../../../services"
+import { companyData } from "../../../../services"
 
 // Context
 import { ThemesContext } from "../../../../ThemesProvider"
@@ -63,8 +61,7 @@ export const TalkToUs = () => {
     ${companyData.phone.region}${companyData.phone.ddd}
     ${companyData.phone.prefix}${companyData.phone.sufix}`
     )
-  const whatsappMessage =
-    "Ola, acabei de visitar o site da mojo e gostaria de mais informações! "
+
   return (
     <TalkToUsSection id='talk-to-us'>
       <div className='centralizer'>
@@ -86,9 +83,9 @@ export const TalkToUs = () => {
               {companyData.phone.prefix}-{companyData.phone.sufix}{" "}
               (CEL/WHATSAPP)
             </p>
-            <a href='mailto:contato@mojoagenciadigital.com.br'>
+            <a href='mailto:contato@agenciamojo.com.br'>
               <img src='./assets/e-mail-icon.svg' alt='email' />
-              contato@mojoagenciadigital.com.br
+              contato@agenciamojo.com.br
             </a>
             <SocialMedia atualCategory={`icon-color-${theme.name}`} />
           </ContactWrapp>

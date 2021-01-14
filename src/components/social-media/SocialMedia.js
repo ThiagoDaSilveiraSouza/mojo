@@ -4,7 +4,7 @@ import styled from "styled-components"
 // components
 import {
   InstagramIcon,
-  TwitterIcon,
+  // TwitterIcon,
   WhatsAppIcon,
   FacebookIcon,
 } from "./data/social-media-icons"
@@ -64,16 +64,28 @@ export const SocialMedia = ({ atualCategory }) => {
     "Ola, acabei de visitar o site da mojo e gostaria de mais informações! "
   return (
     <SocialMediaWrapper className='social-media'>
-      <a href='https://www.facebook.com/AgenciaMojo/' target='_blank'>
+      <a
+        href='https://www.facebook.com/AgenciaMojo/'
+        target='_blank'
+        rel='noreferrer noopener'
+      >
         <FacebookIcon atualCategory={atualCategory || "icon-color-home"} />
       </a>
-      <a href={WhatsAppLink(whatsappMessage)} target='_blank'>
+      <a
+        href={WhatsAppLink(whatsappMessage)}
+        target='_blank'
+        rel='noreferrer noopener'
+      >
         <WhatsAppIcon atualCategory={atualCategory || "icon-color-home"} />
       </a>
       {/* <a href=''>
         <TwitterIcon atualCategory={atualCategory || "icon-color-home"} />
       </a> */}
-      <a href='https://www.instagram.com/agencia.mojo/' target='_blank'>
+      <a
+        href='https://www.instagram.com/agencia.mojo/'
+        target='_blank'
+        rel='noreferrer noopener'
+      >
         <InstagramIcon atualCategory={atualCategory || "icon-color-home"} />
       </a>
     </SocialMediaWrapper>

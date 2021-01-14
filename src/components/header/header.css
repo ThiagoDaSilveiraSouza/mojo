@@ -175,6 +175,7 @@ header .centralizer nav .social-media {
     opacity: 1;
     z-index: auto;
     transition: 0.5s;
+    padding-bottom: 20px;
   }
   .hide-menu {
     transform: translateY(-150%);

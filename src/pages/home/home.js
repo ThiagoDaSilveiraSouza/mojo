@@ -10,10 +10,12 @@ import { Banner } from "../../components/banner"
 import { ThemesContext } from "../../ThemesProvider"
 
 export const Home = ({ headerColor }) => {
-  const setTheme = useContext(ThemesContext)[1]
+  const [, setTheme] = useContext(ThemesContext)
+
   useEffect(() => {
     setTheme({ name: "home" })
-  }, [])
+  }, [setTheme])
+
   const bannerElement = {
     title: "A ",
     span: "sua marca ",
