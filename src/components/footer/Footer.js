@@ -11,7 +11,7 @@ export const Footer = () => {
     <footer>
       {/* <BestEmail /> */}
       <TalkToUs />
-      <h5>©{atualYear} Mojo Agência Digital</h5>
+      <h5>©{atualYear} Agência Mojo</h5>
     </footer>
   )
 }
